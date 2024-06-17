@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.profile-card{
+    height: 450px;
+    width: 350px;
+    background-color: rgba(255,255,255,1);
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.8);
+}
+.profile-back{
+    height: 40%;
+    background-color:#007FFF;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.profile{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 5px solid #3457D5;
+    background-image:url("asmit.jpg");
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+}
+.section{
+    padding: 20px 0;
+    text-align: center;
+
+}
+.section h3{
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.section p {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 35px;
+}
+.icons i{
+    font-size: 24px;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 22px ;
+}
+.buttons button{
+    height: 40px;
+    width: 100px;
+    background-color: #0000FF;
+    border-radius: 20px;
+    color: #fff;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
+.footer{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.col{
+    display: flex;
+    gap: 9px;
+    border-right: 1px solid #000;
+    padding-right: 10px;
+}
+.col:last-child {
+    border-right: none;
+  }
+  
+.col i {
+    font-size: 22px;
+}
+.col span{
+    font-size: 18px;
+}
+@media (max-width: 400px) {
+    .profile-card {
+        width: 90%;
+    }
+  
+    .icons i {
+        font-size: 20px;
+    }
+  
+    .buttons button {
+        width: 90px;
+    }
+  
+    .col span {
+        font-size: 16px;
+    }
+}
